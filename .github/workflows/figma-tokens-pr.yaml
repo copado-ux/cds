@@ -1,15 +1,14 @@
 name: Process Figma Tokens PR
-
 on: pull_request
 
 jobs:
-  run_if: # only if base branch is "figma-tokens"
-    if: ${{ github.head_ref == 'figma-tokens' }}
+  build:
     name: Process Figma Tokens
     runs-on: ubuntu-latest
     timeout-minutes: 5
+  
     steps:
-      # checkout to the head of this PR
+    # checkout to the head of this PR
       - uses: actions/checkout@master
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
