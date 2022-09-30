@@ -1031,7 +1031,7 @@
             "value": {
               "fontFamily": "{cds.core.font.system}",
               "fontSize": "{cds.core.font.size5}*{cds.core.font.rem}",
-              "lineHeight": "{cds.core.font.lineheight.3}",
+              "lineHeight": "{cds.core.font.lineheight.4}",
               "letterSpacing": "",
               "fontWeight": "400"
             },
