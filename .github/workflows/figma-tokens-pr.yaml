@@ -1,5 +1,5 @@
 name: Process Figma Tokens PR
-on: pull_request
+on: [push]
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Run token-transformer
-        run: npx token-transformer sd-input/src/figma-tokens-output.json sd-input/src/sd-input.json --resolveReferences false
+        run: npx token-transformer sd-input/src/figma-tokens-output.json sd-input/src/sd-input.json --expandTypography=true
 
       - name: Run style-dictionary
         run: npx style-dictionary build --config sd.config.cjs
