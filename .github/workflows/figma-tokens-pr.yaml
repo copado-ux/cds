@@ -19,14 +19,11 @@ jobs:
 
       - name: Run token-transformer
         run: npx token-transformer sd-input/src/figma-tokens-output.json sd-input/src/sd-input.json --expandTypography=true
+       
+     # Convert tokens according to Style Dictionary config
+      - run: npx style-dictionary build --config sdConfig.json
 
-      - name: Run style-dictionary
-        run: npx style-dictionary build --config sdConfig.json
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+     # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          author_name: Joren Broekema
-          author_email: joren.broekema@gmail.com
-          message: 'chore: style-dictionary output'
-          add: '.'
+          commit_message: Update Tokens
