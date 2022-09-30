@@ -239,7 +239,7 @@
             "type": "fontSize"
           },
           "lineHeight": {
-            "value": 32,
+            "value": 16,
             "type": "lineHeight"
           },
           "letterSpacing": {
