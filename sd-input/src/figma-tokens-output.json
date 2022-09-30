@@ -1033,7 +1033,7 @@
               "fontSize": "{cds.core.font.size5}*{cds.core.font.rem}",
               "lineHeight": "{cds.core.font.lineheight.3}",
               "letterSpacing": "",
-              "fontWeight": "500"
+              "fontWeight": "400"
             },
             "type": "typography"
           }
