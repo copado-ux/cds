@@ -1,5 +1,5 @@
 {
-  "source": ["sd-input/**/*.json"],
+  "source": ["sd-input/src/sd-input.json"],
   "platforms": {
     "css": {
       "transformGroup": "css",
