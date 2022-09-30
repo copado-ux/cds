@@ -6,12 +6,12 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import logoSvg from './logo.svg?raw';
 
 // Needed for now, initial-color-scheme isn't enough
-document.documentElement.classList.add('dark');
+document.documentElement.classList.add('light');
 
 export const docLayoutTemplate = (content, context) => html`
   <style>
     ${unsafeHTML(styles)} [slot='logo'] span {
-      color: var(--figma-core-colors-primary-500);
+      color: #000000;
     }
 
     [slot='logo'] {
@@ -32,11 +32,11 @@ export const docLayoutTemplate = (content, context) => html`
   </style>
   <dockit-layout
     disable-color-scheme-change
-    initial-color-scheme="dark"
+    initial-color-scheme="light"
     .context="${context}"
   >
     <div slot="logo">
-      ${unsafeHTML(logoSvg)}<span>Figma Tokens Starter</span>
+      ${unsafeHTML(logoSvg)}<span>Copado Design System</span>
     </div>
     <div class="dark:prose-invert">${unsafeHTML(content)}</div>
   </dockit-layout>
