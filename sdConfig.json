@@ -5,7 +5,7 @@
       "transformGroup": "css",
       "files": [
         {
-          "destination": "variables.css",
+          "destination": "tokens/variables.css",
           "format": "css/variables"
         }
       ]
