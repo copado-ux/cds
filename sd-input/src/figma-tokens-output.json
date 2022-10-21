@@ -647,7 +647,7 @@
             "description": "System Font Used in Designs"
           },
           "rem": {
-            "value": "16",
+            "value": "14",
             "type": "fontSizes",
             "description": "default font size"
           },
@@ -800,7 +800,254 @@
         "grid": {
           "base": {
             "value": "8",
-            "type": "other"
+            "type": "other",
+            "description": "Grid base Unit"
+          }
+        },
+        "elevation": {
+          "xs": {
+            "value": [
+              {
+                "x": "0",
+                "y": "5",
+                "blur": "4",
+                "spread": "-4",
+                "color": "#00000005",
+                "type": "dropShadow"
+              },
+              {
+                "x": "0",
+                "y": "1",
+                "blur": "2",
+                "spread": "0",
+                "color": "#0000000f",
+                "type": "dropShadow"
+              }
+            ],
+            "type": "boxShadow",
+            "description": "text fields, cards, checkbox, radio button"
+          },
+          "sm": {
+            "value": [
+              {
+                "x": "0",
+                "y": "0",
+                "blur": "2",
+                "spread": "0",
+                "color": "#0000000a",
+                "type": "dropShadow"
+              },
+              {
+                "x": "0",
+                "y": "2",
+                "blur": "2",
+                "spread": "0",
+                "color": "#00000014",
+                "type": "dropShadow"
+              }
+            ],
+            "type": "boxShadow",
+            "description": "lowest elevation cards"
+          },
+          "lg": {
+            "value": [
+              {
+                "x": "0",
+                "y": "2",
+                "blur": "6",
+                "spread": "0",
+                "color": "#0000000f",
+                "type": "dropShadow"
+              },
+              {
+                "x": "0",
+                "y": "32",
+                "blur": "40",
+                "spread": "-16",
+                "color": "#0000001f",
+                "type": "dropShadow"
+              }
+            ],
+            "type": "boxShadow",
+            "description": "modal dialogue windows"
+          },
+          "xl": {
+            "value": [
+              {
+                "x": "0",
+                "y": "48",
+                "blur": "64",
+                "spread": "-24",
+                "color": "#0000001f",
+                "type": "dropShadow"
+              },
+              {
+                "x": "0",
+                "y": "24",
+                "blur": "48",
+                "spread": "-8",
+                "color": "#0000001f",
+                "type": "dropShadow"
+              }
+            ],
+            "type": "boxShadow",
+            "description": "modal dialogue windows"
+          },
+          "md": {
+            "value": [
+              {
+                "x": "0",
+                "y": "0",
+                "blur": "4",
+                "spread": "0",
+                "color": "#0000000a",
+                "type": "dropShadow"
+              },
+              {
+                "x": "0",
+                "y": "12",
+                "blur": "12",
+                "spread": "-8",
+                "color": "#00000014",
+                "type": "dropShadow"
+              }
+            ],
+            "type": "boxShadow",
+            "description": "drop-downs, select-menus, notifications, alerts"
+          },
+          "flat": {
+            "value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "#00000000",
+              "type": "dropShadow"
+            },
+            "type": "boxShadow",
+            "description": "backgrounds, section backgrounds"
+          }
+        },
+        "spacing": {
+          "4": {
+            "value": "{cds.core.grid.base}*0.5",
+            "type": "sizing",
+            "description": "4"
+          },
+          "8": {
+            "value": "{cds.core.grid.base}*1",
+            "type": "sizing",
+            "description": "8"
+          },
+          "12": {
+            "value": "{cds.core.grid.base}*1.5",
+            "type": "sizing",
+            "description": "12"
+          },
+          "16": {
+            "value": "{cds.core.grid.base}*2",
+            "type": "sizing",
+            "description": "16"
+          },
+          "20": {
+            "value": "{cds.core.grid.base}*2.5",
+            "type": "sizing",
+            "description": "20"
+          },
+          "24": {
+            "value": "{cds.core.grid.base}*3",
+            "type": "sizing",
+            "description": "24"
+          },
+          "28": {
+            "value": "{cds.core.grid.base}*3.5",
+            "type": "sizing",
+            "description": "28"
+          },
+          "32": {
+            "value": "{cds.core.grid.base}*4",
+            "type": "sizing",
+            "description": "32"
+          },
+          "36": {
+            "value": "{cds.core.grid.base}*4.5",
+            "type": "sizing",
+            "description": "36"
+          },
+          "40": {
+            "value": "{cds.core.grid.base}*5",
+            "type": "sizing",
+            "description": "40"
+          },
+          "44": {
+            "value": "{cds.core.grid.base}*5.5",
+            "type": "spacing",
+            "description": "44"
+          },
+          "48": {
+            "value": "{cds.core.grid.base}*6",
+            "type": "sizing",
+            "description": "48"
+          },
+          "52": {
+            "value": "{cds.core.grid.base}*6.5",
+            "type": "sizing",
+            "description": "52"
+          },
+          "56": {
+            "value": "{cds.core.grid.base}*7",
+            "type": "sizing",
+            "description": "56"
+          },
+          "64": {
+            "value": "{cds.core.grid.base}*8",
+            "type": "sizing",
+            "description": "64"
+          },
+          "72": {
+            "value": "{cds.core.grid.base}*9",
+            "type": "sizing",
+            "description": "72"
+          },
+          "80": {
+            "value": "{cds.core.grid.base}*10",
+            "type": "sizing",
+            "description": "80"
+          },
+          "96": {
+            "value": "{cds.core.grid.base}*12",
+            "type": "sizing",
+            "description": "96"
+          },
+          "120": {
+            "value": "{cds.core.grid.base}*15",
+            "type": "sizing",
+            "description": "120"
+          },
+          "144": {
+            "value": "{cds.core.grid.base}*18",
+            "type": "sizing",
+            "description": "144"
+          },
+          "160": {
+            "value": "{cds.core.grid.base}*20",
+            "type": "sizing",
+            "description": "160"
+          },
+          "240": {
+            "value": "{cds.core.grid.base}*30",
+            "type": "sizing",
+            "description": "240"
+          },
+          "256": {
+            "value": "{cds.core.grid.base}*32",
+            "type": "sizing",
+            "description": "256"
+          },
+          "320": {
+            "value": "{cds.core.grid.base}*40",
+            "type": "sizing",
+            "description": "320"
           }
         }
       }
@@ -932,7 +1179,7 @@
               "description": "cards, modals, section background"
             },
             "light": {
-              "value": "{cds.core.color.gray.tint.95}",
+              "value": "{cds.core.color.gray.tint.90}",
               "type": "color",
               "description": "page, section backgrounds"
             },
@@ -1028,32 +1275,269 @@
         },
         "typography": {
           "body": {
-            "value": {
-              "fontFamily": "{cds.core.font.system}",
-              "fontSize": "{cds.core.font.size5}*{cds.core.font.rem}",
-              "lineHeight": "{cds.core.font.lineheight.3}",
-              "letterSpacing": "-0.18",
-              "fontWeight": "{cds.core.font.weight.regular}",
-              "paragraphSpacing": "{cds.core.font.lineheight.4}",
-              "textCase": "As Typed",
-              "textDecoration": "None"
+            "default": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size5}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.3}",
+                "letterSpacing": "-0.18",
+                "fontWeight": "{cds.core.font.weight.regular}",
+                "paragraphSpacing": "{cds.core.font.lineheight.4}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for body"
             },
-            "type": "typography",
-            "description": "Used for body"
+            "semibold": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size5}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.3}",
+                "letterSpacing": "-0.18",
+                "fontWeight": "{cds.core.font.weight.semibold}",
+                "paragraphSpacing": "{cds.core.font.lineheight.4}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for body semibold"
+            }
+          },
+          "label": {
+            "default": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size4}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.2}",
+                "letterSpacing": "0",
+                "fontWeight": "{cds.core.font.weight.regular}",
+                "paragraphSpacing": "{cds.core.font.lineheight.3}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for labels"
+            }
+          },
+          "footnote": {
+            "default": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size3}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.1}",
+                "letterSpacing": "0",
+                "fontWeight": "{cds.core.font.weight.regular}",
+                "paragraphSpacing": "{cds.core.font.lineheight.2}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for footnotes"
+            }
+          },
+          "sectionSubtitle": {
+            "default": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size6}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.3}",
+                "letterSpacing": "0",
+                "fontWeight": "{cds.core.font.weight.regular}",
+                "paragraphSpacing": "{cds.core.font.lineheight.4}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for section subtitle"
+            },
+            "bold": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size6}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.3}",
+                "letterSpacing": "0",
+                "fontWeight": "{cds.core.font.weight.bold}",
+                "paragraphSpacing": "{cds.core.font.lineheight.4}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for section subtitle bold"
+            }
+          },
+          "sectionTitle": {
+            "default": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size7}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.4}",
+                "letterSpacing": "0",
+                "fontWeight": "{cds.core.font.weight.regular}",
+                "paragraphSpacing": "{cds.core.font.lineheight.5}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for section title"
+            },
+            "bold": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size7}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.4}",
+                "letterSpacing": "0",
+                "fontWeight": "{cds.core.font.weight.bold}",
+                "paragraphSpacing": "{cds.core.font.lineheight.5}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for section title bold"
+            }
+          },
+          "pageTitle": {
+            "default": {
+              "value": {
+                "fontFamily": "{cds.core.font.system}",
+                "fontSize": "{cds.core.font.size8}*{cds.core.font.rem}",
+                "lineHeight": "{cds.core.font.lineheight.5}",
+                "letterSpacing": "0",
+                "fontWeight": "{cds.core.font.weight.regular}",
+                "paragraphSpacing": "{cds.core.font.lineheight.6}",
+                "textCase": "As Typed",
+                "textDecoration": "None"
+              },
+              "type": "typography",
+              "description": "Used for page title"
+            }
+          }
+        },
+        "elevation": {
+          "states": {
+            "focused": {
+              "primary": {
+                "value": {
+                  "x": "0",
+                  "y": "0",
+                  "blur": "0",
+                  "spread": "3",
+                  "color": "#56618114",
+                  "type": "dropShadow"
+                },
+                "type": "boxShadow"
+              },
+              "error": {
+                "value": {
+                  "x": "0",
+                  "y": "0",
+                  "blur": "0",
+                  "spread": "3",
+                  "color": "#b91c1c0f",
+                  "type": "dropShadow"
+                },
+                "type": "boxShadow"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "lofi": {
+    "cds": {
+      "lofi": {
+        "typography": {
+          "body": {
+            "value": {
+              "fontFamily": "Roboto Mono",
+              "fontWeight": "400",
+              "lineHeight": "24",
+              "fontSize": "{cds.core.font.size5}*{cds.core.font.rem}",
+              "letterSpacing": "0",
+              "paragraphSpacing": "32",
+              "textDecoration": "None",
+              "textCase": "As Typed"
+            },
+            "type": "typography"
+          },
+          "bodyBold": {
+            "value": {
+              "fontFamily": "Roboto Mono",
+              "fontWeight": "700",
+              "lineHeight": "24",
+              "fontSize": "{cds.core.font.size5}*{cds.core.font.rem}",
+              "letterSpacing": "0",
+              "paragraphSpacing": "32",
+              "textDecoration": "None",
+              "textCase": "As Typed"
+            },
+            "type": "typography"
           },
           "label": {
             "value": {
-              "fontFamily": "{cds.core.font.system}",
+              "fontFamily": "Roboto Mono",
+              "fontWeight": "400",
+              "lineHeight": "20",
               "fontSize": "{cds.core.font.size4}*{cds.core.font.rem}",
-              "lineHeight": "{cds.core.font.lineheight.3}",
               "letterSpacing": "0",
-              "fontWeight": "{cds.core.font.weight.regular}",
-              "paragraphSpacing": "{cds.core.font.lineheight.4}",
-              "textCase": "As Typed",
-              "textDecoration": "None"
+              "paragraphSpacing": "32",
+              "textDecoration": "None",
+              "textCase": "As Typed"
             },
-            "type": "typography",
-            "description": "Used for labels"
+            "type": "typography"
+          },
+          "footnote": {
+            "value": {
+              "fontFamily": "Roboto Mono",
+              "fontWeight": "400",
+              "lineHeight": "16",
+              "fontSize": "{cds.core.font.size3}*{cds.core.font.rem}",
+              "letterSpacing": "0",
+              "paragraphSpacing": "32",
+              "textDecoration": "None",
+              "textCase": "As Typed"
+            },
+            "type": "typography"
+          },
+          "subtitle": {
+            "value": {
+              "fontFamily": "Roboto Mono",
+              "fontWeight": "400",
+              "lineHeight": "32",
+              "fontSize": "{cds.core.font.size6}*{cds.core.font.rem}",
+              "letterSpacing": "0",
+              "paragraphSpacing": "48",
+              "textDecoration": "None",
+              "textCase": "As Typed"
+            },
+            "type": "typography"
+          },
+          "section": {
+            "value": {
+              "fontFamily": "Roboto Mono",
+              "fontWeight": "400",
+              "lineHeight": "48",
+              "fontSize": "{cds.core.font.size7}*{cds.core.font.rem}",
+              "letterSpacing": "0",
+              "paragraphSpacing": "64",
+              "textDecoration": "None",
+              "textCase": "As Typed"
+            },
+            "type": "typography"
+          },
+          "title": {
+            "value": {
+              "fontFamily": "Roboto Mono",
+              "fontWeight": "400",
+              "lineHeight": "64",
+              "fontSize": "{cds.core.font.size8}*{cds.core.font.rem}",
+              "letterSpacing": "0",
+              "paragraphSpacing": "80",
+              "textDecoration": "None",
+              "textCase": "As Typed"
+            },
+            "type": "typography"
           }
         }
       }
@@ -1063,7 +1547,8 @@
   "$metadata": {
     "tokenSetOrder": [
       "core",
-      "semantic"
+      "semantic",
+      "lofi"
     ]
   }
 }
